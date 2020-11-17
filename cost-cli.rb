@@ -23,6 +23,5 @@ class CostCli < Formula
 
   def install
     bin.install "cost-cli"
-    ...
   end
 end
