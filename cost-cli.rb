@@ -2,17 +2,16 @@
 class CostCli < Formula
   desc "CLI for analyzing, visualizing and forecasting cost usages."
   homepage "https://dobbeltk.dk/"
-  version "0.9.3"
+  version "0.9.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/pdsorensen/cost-cli/releases/download/v0.9.3/cost-cli_0.9.3_Darwin_x86_64.tar.gz"
-    sha256 "7181427062d9b710a2e8414c17d19c8650f7d7a65bd57a8da8b4ae29b5fa5214"
-  elsif OS.linux?
-    if Hardware::CPU.intel?
-      url "https://github.com/pdsorensen/cost-cli/releases/download/v0.9.3/cost-cli_0.9.3_Linux_x86_64.tar.gz"
-      sha256 "c4a56a7bbea6bd2f48ca5b3dcf5d86e130cf189010ce81b3feeea1ded85253ca"
-    end
+    url "https://github.com/pdsorensen/cost-cli/releases/download/v0.9.4/cost-cli_0.9.4_Darwin_x86_64.tar.gz"
+    sha256 "6494bca0245409e33cefd0e0679b4c9eedf394a8b55a8a08c43437b9b4d873a9"
+  end
+  if OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/pdsorensen/cost-cli/releases/download/v0.9.4/cost-cli_0.9.4_Linux_x86_64.tar.gz"
+    sha256 "1cddfa43521cd0c9755cfc67d99b00a20f26d89eb73982368262b3d6996462d9"
   end
   
   depends_on "git"
